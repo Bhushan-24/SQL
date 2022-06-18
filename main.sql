@@ -1,0 +1,10 @@
+CREATE TABLE Customer(Customer_id INT(50), first_name CHAR(50),Last_name CHAR(50), Gender CHAR(10), Phonenumber CHAR(50),ItemName VARCHAR(100),Price INT(1000));
+INSERT into Customer values(1,'Sriram','Punyamurthy','male','9246878887','Milkibar',10);
+INSERT into Customer values(2,'Vasu','Punyamurthy','female','9182493381','Amul',150);
+INSERT into Customer values(3,'Delip','kumar','male','7702512200','Gooday',20);
+INSERT into Customer values(4,'Sai','Kumar','male','7569348852','sprite',42);
+SELECT * from Customer;
+SELECT first_name,Last_name from Customer;
+SELECT DISTINCT first_name from Customer;
+SELECT DISTINCT Last_name from Customer;
+SELECT first_name from Customer WHERE Last_name='Kumar';
